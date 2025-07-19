@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ScansDoc.com</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>📄 ScansDoc.com</h1>
+
+  <div class="section">
+    <h2>Upload Document</h2>
+    <input type="file" id="fileInput" />
+    <div id="fileMessage"></div>
+  </div>
+
+  <div class="section">
+    <h2>QR Code Scanner</h2>
+    <div id="qr-reader" style="width: 300px;"></div>
+    <div id="qrMessage"></div>
+  </div>
+
+  <div class="section">
+    <h2>Scan Document with Camera (OCR)</h2>
+    <video id="camera" autoplay></video>
+    <button onclick="captureImage()">📸 Capture</button>
+    <canvas id="canvas" style="display:none;"></canvas>
+    <p id="ocrText"></p>
+  </div>
+
+  <footer>© 2025 ScansDoc.com</footer>
+
+  <script src="html5-qrcode/html5-qrcode.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.0.2/dist/tesseract.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
