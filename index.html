@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ScansDoc.com</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/html5-qrcode"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>ScansDoc.com</h1>
+    <div class="upload-area" id="upload-area">
+      <input type="file" id="fileInput" hidden />
+      <label for="fileInput" class="upload-label">📄 Click to Upload Document</label>
+      <p>or drag & drop your file here</p>
+      <button id="scanQR">📷 Scan QR Code</button>
+    </div>
+    <div id="qr-reader" style="width:300px; margin:auto; display:none;"></div>
+    <div id="message"></div>
+  </div>
+  <footer>© 2025 ScansDoc.com</footer>
+  <script src="script.js"></script>
+</body>
+</html>
